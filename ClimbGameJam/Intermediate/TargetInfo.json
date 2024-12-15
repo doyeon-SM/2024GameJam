@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ClimbGameJam",
+			"Path": "..\\Source\\ClimbGameJam.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ClimbGameJamEditor",
+			"Path": "..\\Source\\ClimbGameJamEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

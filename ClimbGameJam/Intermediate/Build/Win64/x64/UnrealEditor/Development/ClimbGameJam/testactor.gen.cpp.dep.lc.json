@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\unrealeditor\\inc\\climbgamejam\\uht\\testactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\x64\\climbgamejameditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\climbgamejam\\definitions.climbgamejam.h",
+            "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\source\\climbgamejam\\testactor.h",
+            "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\unrealeditor\\inc\\climbgamejam\\uht\\testactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
