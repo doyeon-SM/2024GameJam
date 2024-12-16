@@ -1,43 +1,49 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "CountdownTimer.h"
+#include "Kismet/GameplayStatics.h"
 
-// Sets default values
 ACountdownTimer::ACountdownTimer()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = false; // 매 프레임 Tick 필요 없음
-	CountdownTime = 60; // 초기 시간 설정 (60초)
-
+    PrimaryActorTick.bCanEverTick = false; // No need to tick every frame
+    CountdownTime = 60; // Initial countdown time
 }
 
-// Called when the game starts or when spawned
 void ACountdownTimer::BeginPlay()
 {
-	Super::BeginPlay();
-	// 타이머 시작
-	GetWorldTimerManager().SetTimer(TimerHandle, this, &ACountdownTimer::UpdateTimer, 1.0f, true);
+    Super::BeginPlay();
 
+    // Start the timer
+    GetWorldTimerManager().SetTimer(TimerHandle, this, &ACountdownTimer::UpdateTimer, 1.0f, true);
 }
 
-// Called every frame
 void ACountdownTimer::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-
+    Super::Tick(DeltaTime);
 }
 
 void ACountdownTimer::UpdateTimer()
 {
     if (CountdownTime > 0)
     {
-        --CountdownTime; // 시간 감소
+        --CountdownTime;
+
         UE_LOG(LogTemp, Warning, TEXT("Time Remaining: %d seconds"), CountdownTime);
+        // Play NextCue at 30 seconds
+        if (CountdownTime == 30 && NextCue)
+        {
+            UGameplayStatics::PlaySoundAtLocation(this, NextCue, GetActorLocation());
+            UE_LOG(LogTemp, Warning, TEXT("Next Cue Played"));
+        }
+
+        // Play ThisCue at 10 seconds
+        if (CountdownTime == 10 && ThisCue)
+        {
+            UGameplayStatics::PlaySoundAtLocation(this, ThisCue, GetActorLocation());
+            UE_LOG(LogTemp, Warning, TEXT("This Cue Played"));
+        }
     }
     else
     {
-        // 타이머 종료 처리
+        // Timer ends
         GetWorldTimerManager().ClearTimer(TimerHandle);
         TimerFinished();
     }
@@ -46,5 +52,5 @@ void ACountdownTimer::UpdateTimer()
 void ACountdownTimer::TimerFinished()
 {
     UE_LOG(LogTemp, Warning, TEXT("Timer Finished!"));
-    // 타이머가 종료되었을 때의 동작 추가 (예: 게임 종료, UI 표시 등)
+    // Add any actions when the timer finishes
 }

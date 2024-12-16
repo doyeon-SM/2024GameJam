@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Sound/SoundCue.h"
+
 #include "CountdownTimer.generated.h"
 
 UCLASS()
@@ -33,6 +35,14 @@ private:
     // 타이머가 끝났을 때 호출될 함수
     UFUNCTION()
     void TimerFinished();
+
+    // Sounds to play
+    UPROPERTY(EditAnywhere, Category = "Audio")
+    USoundCue* NextCue;
+
+    UPROPERTY(EditAnywhere, Category = "Audio")
+    USoundCue* ThisCue;
+
 
 public:	
 	// Called every frame
