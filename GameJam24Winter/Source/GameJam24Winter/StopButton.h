@@ -25,7 +25,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Static Mesh ÄÄÆ÷³ÍÆ®
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere,BluePrintReadWrite)
 	UStaticMeshComponent* StaticMeshComponent;
 
 	UPROPERTY(VisibleAnywhere)
