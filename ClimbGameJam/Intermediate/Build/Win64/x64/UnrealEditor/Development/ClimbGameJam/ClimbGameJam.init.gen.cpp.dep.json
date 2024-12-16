@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\unrealeditor\\inc\\climbgamejam\\uht\\climbgamejam.init.gen.cpp",
+        "Source": "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\unrealeditor\\inc\\climbgamejam\\uht\\climbgamejam.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\x64\\climbgamejameditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "PCH": "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\x64\\climbgamejameditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
         "Includes": [
-            "c:\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\climbgamejam\\definitions.climbgamejam.h"
+            "d:\\github\\unreal\\20204gamejam\\2024gamejam\\climbgamejam\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\climbgamejam\\definitions.climbgamejam.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

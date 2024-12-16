@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeClimbGameJam_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x867A271D,
+				0x9F068BEF,
 				0x4858B15B,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeClimbGameJam_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_ClimbGameJam.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ClimbGameJam(Z_Construct_UPackage__Script_ClimbGameJam, TEXT("/Script/ClimbGameJam"), Z_Registration_Info_UPackage__Script_ClimbGameJam, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x867A271D, 0x4858B15B));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ClimbGameJam(Z_Construct_UPackage__Script_ClimbGameJam, TEXT("/Script/ClimbGameJam"), Z_Registration_Info_UPackage__Script_ClimbGameJam, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x9F068BEF, 0x4858B15B));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
