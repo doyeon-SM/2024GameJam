@@ -4,7 +4,7 @@
 ACountdownTimer::ACountdownTimer()
 {
     PrimaryActorTick.bCanEverTick = false; // No need to tick every frame
-    CountdownTime = 5; // Initial countdown time
+    CountdownTime = 60; // Initial countdown time
     MapResult = false; // Default value
 }
 
