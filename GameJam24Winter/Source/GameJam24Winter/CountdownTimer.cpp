@@ -4,7 +4,7 @@
 ACountdownTimer::ACountdownTimer()
 {
     PrimaryActorTick.bCanEverTick = false; // No need to tick every frame
-    CountdownTime = 60; // Initial countdown time
+    CountdownTime = 5; // Initial countdown time
     MapResult = false; // Default value
 }
 
@@ -53,5 +53,6 @@ void ACountdownTimer::UpdateTimer()
 void ACountdownTimer::TimerFinished()
 {
     UE_LOG(LogTemp, Warning, TEXT("Timer Finished!"));
+    Finished = true;
     // Add any actions when the timer finishes
 }

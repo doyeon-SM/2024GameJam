@@ -54,4 +54,7 @@ public:
     UFUNCTION(BlueprintCallable, Category = "Timer")
     int32 GetRemainingTime() const { return CountdownTime; }
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    bool Finished = false;
+
 };
