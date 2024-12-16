@@ -15,7 +15,7 @@ UCLASS()
 class GAMEJAM24WINTER_API AGameJam24WinterPlayerController : public APlayerController
 {
 	GENERATED_BODY()
-	
+
 protected:
 
 	/** Input Mapping Context to be used for player input */
@@ -26,6 +26,8 @@ protected:
 protected:
 
 	virtual void BeginPlay() override;
+
+	virtual void Tick(float DeltaTime) override;
 
 	// End Actor interface
 };
