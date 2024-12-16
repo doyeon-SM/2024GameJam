@@ -5,6 +5,7 @@ ACountdownTimer::ACountdownTimer()
 {
     PrimaryActorTick.bCanEverTick = false; // No need to tick every frame
     CountdownTime = 60; // Initial countdown time
+    MapResult = false; // Default value
 }
 
 void ACountdownTimer::BeginPlay()
